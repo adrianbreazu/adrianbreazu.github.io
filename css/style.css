@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 300px;
+}
+
+.main_div {
+    max-width: 700px;
+    word-wrap: break-word;
+    overflow: visible;
+}
+
+.green_line {
+    color: rgb(30, 255, 30);
+}
+
+.white_line {
+    color: rgb(255, 255, 255);
+}
+
+.blink {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#history p {
+    margin-bottom: 0;
+    padding: 0;
+    margin-block-start: 0;
+}
+
+@keyframes blink {
+    from {
+        background-color: rgb(30, 255, 30);
+    }
+    to {
+        background-color: rgb(0, 0, 0);
+    }
+}
